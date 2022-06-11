@@ -1,0 +1,41 @@
+{
+    "model_name": "resnet18",
+    "dataset": "cifar10",
+    "poison_label": 1,
+    "poison_ratio": 1,
+    "intensities": [
+        [
+            56,
+            80,
+            51
+        ],
+        [
+            56,
+            60,
+            57
+        ],
+        [
+            56,
+            59,
+            56
+        ]
+    ],
+    "frequencies": [
+        [
+            1,
+            12
+        ],
+        [
+            14,
+            0
+        ],
+        [
+            3,
+            13
+        ]
+    ],
+    "k": 200,
+    "epochs": 800,
+    "batch_size": 64,
+    "temperature": 0.5
+}

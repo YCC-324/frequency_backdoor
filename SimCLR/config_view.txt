@@ -1,0 +1,12 @@
+{
+    "model_name": "densenet",
+    "dataset": "stl10",
+    "poison_label": 1,
+    "poison_ratio": 1,
+    "intensities": [[26,26,27],[31,31,31],[31,31,31]],
+    "frequencies": [[2,92],[10,91],[2,89]],
+    "k": 200,
+    "epochs": 800,
+    "batch_size": 64,
+    "temperature": 0.5
+}
