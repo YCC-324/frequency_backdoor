@@ -112,10 +112,7 @@ class TensorDataset(Dataset):
             
             for i in range(len(self.frequencies)):
                 for ch in range(3):
-                    if img[ch][self.frequencies[i][0]][self.frequencies[i][1]] > 0:
-                        img[ch][self.frequencies[i][0]][self.frequencies[i][1]] = self.intensities[ch][i]
-                    else:
-                        img[ch][self.frequencies[i][0]][self.frequencies[i][1]] = -self.intensities[ch][i]
+                    img[ch][self.frequencies[i][0]][self.frequencies[i][1]] = self.intensities[ch][i]
 
             
             img = idct_transfer(img)
